@@ -1,0 +1,36 @@
+body { 
+    height: 100%;
+    width: 100%;
+    background: peru;
+}
+div {
+    background: red;
+    height: 300px;
+    width: 250px;
+    text-align: center;
+}
+#yellow {
+    color: rgb(194, 194, 22);
+    font-size: 24px;
+}
+h3 {
+    display: inline-block
+    margin-right: 10px
+}
+ p {
+    display: inline-block;
+}
+p:nth-of-type(2) {
+    font-size: .5em;
+    font-size: 10px;
+}
+.content {
+    text-align: left;
+    padding: 0 0 0 10px;
+    color: green;
+    font-weight: bold;
+}
+input[type="type"]{
+    font-size: 20px;
+    border: 2px solid blue;
+}
