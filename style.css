@@ -98,6 +98,9 @@ body {
     letter-spacing: 16px;
     font-style: italic;
   }
+  a {
+    text-decoration: none;
+  }
   a:hover {
     text-decoration: none;
     color: yellow;
