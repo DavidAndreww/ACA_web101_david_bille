@@ -1,5 +1,28 @@
 body {
-    height: 100%;
-    width: 100%;
-    background: rgb(40, 116, 40);
+    background: blue;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'menu header header header header right'
+        'menu main main main main main'
+        'menu main main main main main';
+grid-gap: 10px;
+padding: 30px;
+background: white;
+}
+
+.image {grid-area: menu;}
+.heading {grid-area: header;}
+.date {grid-area: right;}
+.content {grid-area: main;}
+
+.grid-container > div {
+    background-color: teal;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
 }
