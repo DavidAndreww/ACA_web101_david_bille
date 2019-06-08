@@ -1,21 +1,21 @@
 body {
     background-color: teal;
     background-repeat: no-repeat;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr  1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        'menu header header header header right'
-        'menu main main main main main'
-        'menu main main main main main';
+        'menu header header header right'
+        'menu main main main main'
+        'menu main main main main';
 grid-gap: 10px;
 grid-row-gap: 1em;
-padding: 1em;
+padding: .5em;
 background: white;
 border: 2px solid black;
 }
@@ -63,4 +63,7 @@ img {
   a {
       text-decoration: none;
       color: black;      
+  }
+  em {
+      vertical-align: super;
   }
