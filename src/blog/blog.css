@@ -1,6 +1,6 @@
 body {
-    background-color: teal;
-    background-repeat: no-repeat;
+    background-image: url(/background.jpg);
+    background-size: 100%;
     margin-right: 15%;
     margin-left: 15%;
 }
@@ -31,18 +31,17 @@ border: 2px solid black;
     }
 
 .grid-container > div:nth-of-type(1) {
-    padding: 0%;
     
 }
 
 .grid-container > div:nth-of-type(2) {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: left;
 }
 
 .grid-container > div:nth-of-type(3) {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .80em;
     font-style: italic;
     font-weight: bold;
     font-variant: small-caps;
@@ -50,8 +49,7 @@ border: 2px solid black;
 }
 
 .grid-container > div:nth-of-type(4) {
-    align-self: start;
-    font-size: .75em;
+    font-size: 1em;
     text-align: left;
 }
 
