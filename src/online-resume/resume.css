@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(76, 139, 190);
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+header {
+    background-color: beige;
+    text-align: center;
+    height: 20%;
+}
+
+h1 {
+    font-family: cursive;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% auto 33%;
+    grid-template-areas:
+    'box1 box2'
+    'box3 box4'
+    'box5 box6';
+    border: 2px solid black;
+}
+
+.box1 {grid-area: box1;}
+.box2 {grid-area: box2;}
+.box3 {grid-area: box3;}
+.box4 {grid-area: box4;}
+.box5 {grid-area: box5;}
+.box6 {grid-area: box6;}
