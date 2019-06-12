@@ -1,0 +1,168 @@
+body {
+  background-image: url(../../background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  margin-right: 30%;
+  margin-left: 25%;
+  vertical-align: middle;
+}
+/* WHY ARE MY MARGINS OFF!?!?! */
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 30% auto%;
+  grid-template-rows: 50% auto%;
+  /* grid-template-areas:
+  'img head'
+  'img title'; */
+  background-image: url(./header.jpg);
+  width: 100%;
+  height: 200px;
+  border: 2px solid black;
+  padding: 5%;
+}
+
+.img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: center;
+}
+.grid1 div:nth-of-type(1) {
+  text-align: center;
+}
+img {
+  border-radius: 8em;
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+}
+
+.head {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: end;
+  justify-self: center;
+  }
+.grid1 div:nth-of-type(2) {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+}
+
+.title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-: 2;
+  grid-row-end: 3;
+  align-self: start;
+  justify-self: center;
+}
+.grid1 div:nth-of-type(3) {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 15% 20% auto;
+  grid-template-rows: 50% 6% 6% 6% 6% auto;
+  width: 108%;
+  height: 100%;
+  background-color: white;
+  border: 2px solid black;
+  padding: 1%;
+}
+
+/* HOW DO I FIX PADDING???  */
+
+.profile {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 2%;
+}
+
+.address1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2 ;
+  grid-row-end: 3;
+  justify-self: center;
+}
+.address2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3
+}
+
+.email1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: center;
+}
+.email2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.phone1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: center;
+}
+.phone2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.social1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  justify-self: center;
+}
+.social2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.education {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.skills {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  background-color: beige;
+  padding: 2%;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
