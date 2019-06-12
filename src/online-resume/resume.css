@@ -1,70 +1,67 @@
 body {
-    background-color: rgb(76, 139, 190);
+    background-image: url(../../background.jpg);
+    background-size: 100%;
+    margin-right: 20%;
     margin-left: 15%;
-    margin-right: 15%;
+    vertical-align: middle;
 }
+/* WHY ARE MY MARGINS OFF!?!?! */
 
-header {
-    background-color: beige;
-    text-align: center;
-    height: 20%;
-    border: 2px solid black;
-    border-radius: 1em;
-}
-
-h1 {
-    font-family: cursive;
-}
-
-h2 {
-    font-family: cursive;
-}
-
-.main-container {
+.grid1 {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 33% auto 33%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
     grid-template-areas:
-    'box1 box2'
-    'box3 box4'
-    'box5 box6';
-    height: 100%;
-    background-color: beige;
+    'img head'
+    'img title';
+    background-image: url(./header.jpg);
+    width: 100%;
+    height: 200px;
+    border: 2px solid black;
+    padding: 5%;
+}
+
+.img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+}
+.grid1 div:nth-of-type(1) {
+    text-align: center;
+}
+img {
+    border-radius: 8em;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+}
+
+.head {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: end;
+    justify-self: center;
     }
-
-.box1 {grid-area: box1;
-border: 2px solid black;}
-.box2 {grid-area: box2;
-border: 2px solid black}
-.box3 {grid-area: box3;
-border: 2px solid black}
-.box4 {grid-area: box4;
-border: 2px solid black}
-.box5 {grid-area: box5;
-border: 2px solid black}
-.box6 {grid-area: box6;
-border: 2px solid black}
-
-.main-container > div:nth-of-type(1) {
-    background-color: rgb(167, 216, 147);
+.grid1 div:nth-of-type(2) {
+    text-align: center;
+    font-size: 3em;
+    color: white;
 }
 
-.main-container > div:nth-of-type(2) {
-    background-color: rgb(161, 13, 100);
+.title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-: 2;
+    grid-row-end: 3;
+    align-self: start;
+    justify-self: center;
 }
-
-.main-container > div:nth-of-type(3) {
-    background-color: red;
-}
-
-.main-container > div:nth-of-type(4) {
-    background-color: rgb(30, 161, 201);
-}
-
-.main-container > div:nth-of-type(5) {
-    background-color: rgb(224, 247, 25);
-}
-
-.main-container > div:nth-of-type(6) {
-    background-color: rgb(13, 10, 190);
+.grid1 div:nth-of-type(3) {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
 }
