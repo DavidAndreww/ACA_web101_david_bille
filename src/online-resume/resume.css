@@ -1,19 +1,22 @@
 body {
     background-image: url(../../background.jpg);
     background-size: 100%;
-    margin-right: 20%;
-    margin-left: 15%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    margin-right: 30%;
+    margin-left: 25%;
     vertical-align: middle;
 }
 /* WHY ARE MY MARGINS OFF!?!?! */
 
 .grid1 {
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
+    grid-template-columns: 30% auto%;
+    grid-template-rows: 50% auto%;
+    /* grid-template-areas:
     'img head'
-    'img title';
+    'img title'; */
     background-image: url(./header.jpg);
     width: 100%;
     height: 200px;
@@ -34,8 +37,8 @@ body {
 img {
     border-radius: 8em;
     object-fit: cover;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 }
 
 .head {
@@ -64,4 +67,102 @@ img {
     text-align: center;
     font-size: 1.5em;
     color: white;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 15% 20% auto;
+    grid-template-rows: 50% 6% 6% 6% 6% auto;
+    width: 108%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid black;
+    padding: 1%;
+}
+
+/* HOW DO I FIX PADDING???  */
+
+.profile {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 2%;
+}
+
+.address1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2 ;
+    grid-row-end: 3;
+    justify-self: center;
+}
+.address2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3
+}
+
+.email1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+}
+.email2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.phone1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: center;
+}
+.phone2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.social1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-self: center;
+}
+.social2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.education {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.skills {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-color: beige;
+    padding: 2%;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
 }
