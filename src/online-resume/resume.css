@@ -1,12 +1,12 @@
 body {
-  background-image: url(../../background.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
-  margin-right: 30%;
-  margin-left: 25%;
-  vertical-align: middle;
+    background-image: url(../../background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    margin-right: 30%;
+    margin-left: 25%;
+    vertical-align: middle;
 }
 /* WHY ARE MY MARGINS OFF!?!?! */
 
