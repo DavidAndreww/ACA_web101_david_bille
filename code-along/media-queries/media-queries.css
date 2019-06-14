@@ -44,7 +44,7 @@ nav ul li {
   display: inline-block;
 }
 
-@media (m-width: 576px) {
+@media (min-width: 576px) {
   nav{
     height: 500px;
   }
