@@ -132,10 +132,8 @@ img {
 }
 
 .social1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 6;
-  grid-row-end: 7;
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
   justify-self: center;
 }
 .social2 {
@@ -150,6 +148,7 @@ img {
   grid-column-end: 4;
   grid-row-start: 7;
   grid-row-end: 8;
+  background-color: #5D5D5D;
 }
 
 .skills {
@@ -164,11 +163,13 @@ img {
 h2 {
   text-align: center;
   text-decoration: underline;
+  font-family:'Arial Narrow Bold';
+  font-variant: small-caps;
 }
 
 .icon > img {
-  height: 50%;
-  width: 50%;
+  height: 40%;
+  width: 40%;
   }
 
 .icon {
@@ -179,10 +180,17 @@ h2 {
 
 .text {
   align-self: center;
+  font-family: calibri;
 }
 .edu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  }
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
 
