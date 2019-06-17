@@ -6,11 +6,9 @@
 .main-container {
   display: inline-block;
   width: 100%;
-  border: 1px solid blue;
   }
 .image-container {
   width: 100%;
-  border: 1px solid black;
   }
 img {
   width: 450px;
@@ -20,13 +18,15 @@ img {
   float: right;
   font-family: verdana;
   font-variant: small-caps;
-  border: 1px solid red;
   width: 40%;
+  max-width: 350px;
+  line-height: 1.5em;
 }
 .text {
   padding: 10px;
   width: auto;
   font-family: calibri;
+  max-width: 550px;
 }
 .text > div {
   font-family: calibri;
@@ -77,7 +77,6 @@ h2 {
     display: none;
   }
 }
-
 @media (min-width: 750px) {
   .top-stories {
       display: inline-block;
