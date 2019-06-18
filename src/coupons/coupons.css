@@ -3,3 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  height: 100%;
+  width: 100%;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+}
+.title {
+  border: 2px solid blue;
+  width: 80%;
+  height: 20%;
+  display: inline-block;
+}
+.sale {
+  border: 2px solid red;
+  height: 20%;
+  width: 20%;
+  float: right;
+}
+.main {
+  border: 2px solid green;
+  height: 60%;
+  width: 80%;
+  display: inline-block;
+}
+.sidebar {
+  border: 2px solid black;
+  height: 60%;
+  width: 20%;
+  float: right;
+}
+.footer {
+  border: 2px solid purple;
+  height: 20%;
+  width: 100%;
+}
+
