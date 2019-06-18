@@ -37,6 +37,8 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 3em;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .content {
   height: 100%;
