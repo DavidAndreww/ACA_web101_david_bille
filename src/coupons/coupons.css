@@ -6,26 +6,24 @@
 body {
   height: 100%;
   width: 100%;
-  padding-left: 12.5%;
-  padding-right: 12.5%;
+  padding: 1% 16%;
 }
 .title {
-  border: 2px solid blue;
   width: 80%;
   height: 20%;
-  display: inline-block;
+  display: inline-grid;
 }
 .sale {
-  border: 2px solid red;
   height: 20%;
   width: 20%;
   float: right;
+  display: grid;
 }
 .main {
-  border: 2px solid green;
+  border: 4px solid #45AFBD;
   height: 60%;
   width: 80%;
-  display: inline-block;
+  display: inline-grid;
 }
 .sidebar {
   border: 2px solid black;
@@ -34,8 +32,163 @@ body {
   float: right;
 }
 .footer {
-  border: 2px solid purple;
   height: 20%;
   width: 100%;
+  border: 1px solid black;
 }
-
+.grid1 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 80% 20%;
+}
+.cookie {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  /* max-width: 100%;
+  max-height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.cookietitle {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Righteous', cursive;
+  font-size: 4em;
+  letter-spacing: 4px;
+}
+.expiration {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  background-color: aqua;
+}
+.salegrid {
+  display: grid;
+  grid-template-rows: 65% auto;
+}
+.save20 {
+  grid-row: 1/2;
+  background-color: #C33157;
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+.exclusive {
+  grid-row: 2/3;
+  background-color: #45AFBD;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold
+}
+.maingrid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  width: 100%;
+}
+.maingrid2 {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: blue;
+}
+.main1 {
+  grid-column: 1/2;
+}
+.main2 {
+  grid-column: 2/3;
+  background-color: #45AFBD;
+}
+.main3 {
+  grid-column: 3/4;
+  background-color: orange;
+}
+.main21 {
+  grid-column: 1/2;
+  background-color: red;
+}
+.main22 {
+  grid-column: 2/3;
+  background-color: teal;
+}
+.main23 {
+  grid-column: 3/4;
+  background-color: magenta;
+}
+.main24 {
+  grid-column: 4/5;
+  background-color: white;
+}
+.sidebargrid {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: repeat(3, 1fr);
+}
+.side1 {
+  grid-row: 1/2;
+  background-color: teal;
+}
+.side2 {
+  grid-row: 2/3;
+  background-color: yellow;
+}
+.side3 {
+  grid-row: 3/4;
+  background-color: magenta;
+}
+.footergrid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 20% repeat(3, 1fr);
+}
+.foot1 {
+  grid-column: 1/2;
+  background-color: #45AFBD;
+}
+.foot2 {
+  grid-column: 2/3;
+  background-color: brown;
+}
+.foot3 {
+  grid-column: 3/4;
+  background-color: silver
+}
+.foot4 {
+  grid-column: 4/5;
+  background-color: gold;
+}
+.grid1-inner {
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-rows: auto 30% 20%;
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 3px;
+}
+.innerprice1 {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  background-color: orange;
+}
+.innertext1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: yellow;
+}
