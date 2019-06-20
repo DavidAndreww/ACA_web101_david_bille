@@ -92,13 +92,17 @@ main {
   display: grid;
   grid-template-rows: 65% auto;
 }
+/* .salegrid > div {
+  display: flex;
+  align-items: center;
+} */
 .save20 {
   grid-row: 1/2;
   background-color: #C33157;
   color: white;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.6em;
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: center;
