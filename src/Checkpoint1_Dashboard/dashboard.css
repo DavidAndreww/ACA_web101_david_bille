@@ -7,9 +7,11 @@ body {
   height: 100%;
   width: 100%;
   padding: 1% 5%;
+  background-color: #064272;
 }
 nav {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  background-color: #FFFFFF;
   width: 15%;
   height: 100%;
   display: inline-flex;
@@ -18,16 +20,16 @@ nav {
   align-items: center;
 }
 .navtitle {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .name {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .david {
-  border-radius: 50%;
+  border-radius: 50% 0% 50%;
   height: 50%
 }
 .name-title {
@@ -38,14 +40,15 @@ nav {
 }
 ul {
   height: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly
 }
 header {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  background-color: #FFFFFF;
   float: right;
   width: 85%;
   height: 7%;
@@ -57,10 +60,12 @@ header {
   flex: 1;
 }
 input {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  width: 50%;
 }
 button {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  width: 25%;
 }
 .heading-text {
   border: 2px solid black;
@@ -70,45 +75,146 @@ button {
   justify-content: space-evenly
 }
 main {
-  border: 2px solid green;
+  /* border: 2px solid green; */
+  background-color: #F2EDF3;
   width: 85%;
   height: 93%;
   float: right;
   display: inline-block;
 }
 .dashboard {
-  border: 2px solid green;
+  /* border: 2px solid orange; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1% 0% 0% 1%;
 }
 .gridtop {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 .sales {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 .orders {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 .visitors {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 .gridbot {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 .bar-graph {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 .graph-text {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 .pie-chart {
-  border: 2px solid ;
+  /* border: 2px solid ; */
 }
 .gridbot {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 .bar-graph {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+}
+/* tablet view 1050px? */
+.gridtop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-area: 'sales orders visitors';
+  column-gap: 3.5%;
+  height: 40%;
+  width: 100%;
+  padding: 2% 1% 1.5% 3.5%;
+}
+.sales {
+  grid-column: 1;
+  background-color: #FE8996;
+}
+.orders {
+  grid-column: 2;
+  background-color: #3297E7;
+}
+.visitors {
+  grid-column: 3;
+  background-color: #30D1BA;
+}
+.sov {
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0% 0% 0% 10%;
+}
+.value {
+  margin-bottom: 15%;
+  font-size: 2em;
+}
+.gridbot {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-area: 'bar-graph pie-chart';
+  height: 55%; /*ADJUST WHEN BORDERS ARE GONE*/
+  width: 100%;
+  padding: 1% 1% .5% 2.5%;
+  column-gap: 3.5%;
+}
+.bar-graph {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+}
+.graph-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+.countries {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: .75;
+}
+.bar-img {
+  display: flex;
+  justify-self: center;
+}
+.pie-chart {
+  background-color: white;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.pie-text {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+.pie-img {
+  height: 151px;
+  width: 145px;
+}
+.pie-values {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40%;
+  width: 100%; 
+  padding: 0% 15%;
+}
+.bgr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
