@@ -38,7 +38,7 @@ h1 {
   color: lightslategray
 }
 .david {
-  border-radius: 50% 0% 50%;
+  border-radius: 5% 50% 50% 50%;
   height: 61px;
   width: 61px;
 }
