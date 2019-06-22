@@ -12,25 +12,37 @@ body {
 nav {
   /* border: 2px solid black; */
   background-color: #FFFFFF;
-  width: 15%;
+  width: 20%;
   height: 100%;
   display: inline-flex;
   flex-direction: column;
   float: left;
-  align-items: center;
+  padding: .5% 2.25%;
+}
+h1 {
+  font-family: 'Courgette', cursive;
 }
 .navtitle {
-  /* border: 2px solid red; */
+  text-align: center;
 }
 .name {
   /* border: 2px solid red; */
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+.db {
+  font-weight: 900;
+}
+.dev {
+  font-weight: 200;
+  font-size: 12px;
+  color: lightslategray
 }
 .david {
   border-radius: 50% 0% 50%;
-  height: 50%
+  height: 61px;
+  width: 61px;
 }
 .name-title {
   display: flex;
@@ -38,19 +50,28 @@ nav {
   justify-items: center;
   text-align: center;
 }
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Comfortaa', cursive;
+  font-size: 11px;
+}
+.navimg {
+  width: 15px;
+  height: 15px;
+}
 ul {
   height: 100%;
-  /* border: 2px solid red; */
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly
 }
 header {
-  /* border: 2px solid black; */
   background-color: #FFFFFF;
   float: right;
-  width: 85%;
+  width: 80%;
   height: 7%;
   display: flex;
   justify-content: space-between;
@@ -58,66 +79,53 @@ header {
 }
 .features{
   flex: 1;
+  display: flex;
+  flex-direction: row;
 }
 input {
-  /* border: 2px solid black; */
   width: 50%;
 }
 button {
-  /* border: 2px solid black; */
-  width: 25%;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 1px solid grey;
+}
+.searchbutton {
+  width: 20px;
 }
 .heading-text {
-  border: 2px solid black;
   display: flex;
   flex-direction: row;
   flex: 2;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  font-family: 'Comfortaa', cursive;
 }
 main {
-  /* border: 2px solid green; */
   background-color: #F2EDF3;
-  width: 85%;
+  width: 80%;
   height: 93%;
   float: right;
   display: inline-block;
 }
 .dashboard {
-  /* border: 2px solid orange; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 0% 0% 1%;
+  padding: 1% 1.5%;
 }
-.gridtop {
-  /* border: 2px solid orange; */
+.dashleft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ justify-content: space-around; /*Why can't I space button and text? */
 }
-.sales {
-  /* border: 2px solid orange; */
-}
-.orders {
-  /* border: 2px solid orange; */
-}
-.visitors {
-  /* border: 2px solid orange; */
-}
-.gridbot {
-  /* border: 2px solid blue; */
-}
-.bar-graph {
-  /* border: 2px solid blue; */
-}
-.graph-text {
-  /* border: 2px solid blue; */
-}
-.pie-chart {
-  /* border: 2px solid ; */
-}
-.gridbot {
-  /* border: 2px solid blue; */
-}
-.bar-graph {
-  /* border: 2px solid blue; */
+.dash {
+  background-color: #9B56FF;
+  border-color:#9B56FF;
+  width: 30px;
+  height: 30px;
+  border-radius: 14%;
 }
 /* tablet view 1050px? */
 .gridtop {
@@ -131,15 +139,15 @@ main {
 }
 .sales {
   grid-column: 1;
-  background-color: #FE8996;
+  background-image: linear-gradient(to right, #ffbe96, #ffab8d, #ff988a, #ff848e, #fe7096);
 }
 .orders {
   grid-column: 2;
-  background-color: #3297E7;
+  background-image: linear-gradient(to right top, #8ec9f9, #78bcf4, #61aef0, #49a1eb, #2b93e6);
 }
 .visitors {
   grid-column: 3;
-  background-color: #30D1BA;
+  background-image: linear-gradient(to right top, #69dfce, #5dd8c6, #51d1bf, #43cbb7, #33c4b0);
 }
 .sov {
   border-radius: 5%;
@@ -147,6 +155,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0% 0% 0% 10%;
+  color: #f9f9f9;
 }
 .value {
   margin-bottom: 15%;
@@ -156,7 +165,7 @@ main {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-area: 'bar-graph pie-chart';
-  height: 55%; /*ADJUST WHEN BORDERS ARE GONE*/
+  height: 50%;
   width: 100%;
   padding: 1% 1% .5% 2.5%;
   column-gap: 3.5%;
@@ -167,24 +176,54 @@ main {
   flex-direction: column;
   align-items: center;
   border-radius: 5%;
+  padding: 3%;
+  justify-content: space-around;
 }
 .graph-text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin-top: 2%;
-  margin-left: 3%;
 }
 .countries {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex: .75;
+  font-size: 12px;
+}
+.countries .chn::before {
+  content: "\2022";
+  color: #9b56ff;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  font-size: 1.5em;
+}
+.countries .usa::before {
+  content: "\2022";
+  color: #FE8896;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  font-size: 1.5em;
+}
+.countries .ger::before {
+  content: "\2022";
+  color: #80B3F2;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  font-size: 1.5em;
 }
 .bar-img {
   display: flex;
   justify-self: center;
+  width: 431px;
+  height: 218px;
 }
 .pie-chart {
   background-color: white;
@@ -193,19 +232,17 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 6%;
 }
 .pie-text {
   display: flex;
   align-self: flex-start;
-  margin-top: 3%;
-  margin-left: 3%;
 }
 .pie-img {
   height: 151px;
   width: 145px;
 }
 .pie-values {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -217,4 +254,35 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 13px;
+}
+h2, h4, p, li {
+  font-family: 'Comfortaa', cursive;
+}
+:root {
+  --mainColor: #9b56ff;
+}
+a {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 5px
+     );
+	background-repeat: repeat-x;
+	background-size: 100%;
+  color: #000;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
 }
