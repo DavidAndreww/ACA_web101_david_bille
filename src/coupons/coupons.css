@@ -214,7 +214,7 @@ main {
   max-width: 100%;
   height: 100%;
   width: 100%;
-  background-image: url(./fruit.png);
+  background-image: url(./coupons-images/fruit.png);
   background-size: 65%;
   background-repeat: no-repeat;
   background-position-x: 25px;
@@ -246,7 +246,7 @@ main {
   width: 100%;
   max-width: 100%;
   max-height: 100%;
-  background-image: url(./chips.png);
+  background-image: url(./coupons-images/chips.png);
   background-size: 65%;
   background-repeat: no-repeat;
   background-position-x: 25px;
@@ -276,7 +276,7 @@ main {
   width: 100%;
   max-height: 33%;
   max-width: 100%;
-  background-image: url(./wine.png);
+  background-image: url(./coupons-images/wine.png);
   background-size: 40%;
   background-repeat: no-repeat;
   background-position-x: 25px;
@@ -299,7 +299,7 @@ main {
   width: 100%;
   max-height: 33%;
   max-width: 100%;
-  background-image: url(./bjs.png);
+  background-image: url(./coupons-images/bjs.png);
   background-size: 40%;
   background-repeat: no-repeat;
   background-position-x: 25px;
@@ -328,7 +328,7 @@ main {
   width: 100%;
   max-height: 33%;
   max-width: 100%;
-  background-image: url(./ramen.png);
+  background-image: url(./coupons-images/ramen.png);
   background-size: 75%;
   background-repeat: no-repeat;
   background-position-x: 25px;
@@ -350,7 +350,7 @@ main {
   width: 100%;
   max-height: 100%;
   max-width: 100%;
-  background-image: url(./coffee.png);
+  background-image: url(./coupons-images/coffee.png);
   background-size: 28%;
   background-repeat: no-repeat;
   background-position-x: 25px;
@@ -372,7 +372,7 @@ main {
   width: 100%;
   max-height: 100%;
   max-width: 100%;
-  background-image: url(./coke.png);
+  background-image: url(./coupons-images/coke.png);
   background-size: 60%;
   background-repeat: no-repeat;
   background-position-x: 55px;
@@ -394,7 +394,7 @@ main {
   width: 100%;
   max-height: 100%;
   max-width: 100%;
-  background-image: url(./monster.png);
+  background-image: url(./coupons-images/monster.png);
   background-size: 45%;
   background-repeat: no-repeat;
   background-position-x: 70px;
@@ -420,7 +420,7 @@ main {
   width: 100%;
   max-height: 100%;
   max-width: 100%;
-  background-image: url(./tea.png);
+  background-image: url(./coupons-images/tea.png);
   background-size: 70%;
   background-repeat: no-repeat;
   background-position-x: 30px;
@@ -444,7 +444,7 @@ main {
   width: 100%;
   max-height: 100%;
   max-width: 100%;
-  background-image: url(./nuts.png);
+  background-image: url(./coupons-images/nuts.png);
   background-size: 65%;
   background-repeat: no-repeat;
   background-position-x: 30px;
@@ -475,7 +475,7 @@ main {
   width: 100%;
   max-height: 100%;
   max-width: 100%;
-  background-image: url(./chobani.png);
+  background-image: url(./coupons-images/chobani.png);
   background-size: 65%;
   background-repeat: no-repeat;
   background-position-x: 30px;
@@ -498,7 +498,7 @@ main {
   width: 100%;
   max-height: 100%;
   max-width: 100%;
-  background-image: url(./chocs.png);
+  background-image: url(./coupons-images/chocs.png);
   background-size: 65%;
   background-repeat: no-repeat;
   background-position-x: 30px;
