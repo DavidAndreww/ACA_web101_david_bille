@@ -10,8 +10,11 @@ body {
   width: 19%;
   border-radius: 50%;
 }
-.david {
+#logo {
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header {
   width: 100%;
@@ -23,7 +26,7 @@ nav {
   justify-content: space-around;  
   align-items: center;
 }
-nav div {
+.links {
   flex: 1;
   display: flex;
   justify-content: space-around;
