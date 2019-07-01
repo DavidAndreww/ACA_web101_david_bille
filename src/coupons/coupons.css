@@ -1,3 +1,10 @@
+/* 
+great work! 
+a few notes on some adjustments/suggestions below 
+but this was about grid work and it works!! 
+this was a tough one! 🔥🔥🔥
+group the images in a folder. makes finding the html/css easier.
+*/
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +14,21 @@ body {
   height: 100%;
   width: 100%;
   padding: 1% 15%;
+  /* remove padding and add flex, and set a max/min width on child element */
+  /* display: flex;
+  justify-content: center; */
 }
 main {
   border: 2px solid black;
   padding: 10px;
+  /* 
+  if we're not making it responsive, 
+  let's show the user how it should always 
+  look by setting a max/min width */
+  /* width: 100%;
+  min-width: 900px;
+  max-width: 950px; */
+
 }
 .title {
   width: 80%;
@@ -103,12 +121,18 @@ main {
   background-color: #C33157;
   color: white;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.6em;
   /* text-align: center; */
   display: flex;
   align-items: center;
   justify-self: center;
   font-weight: bolder;
+  font-size: 1.6em;
+  /* 
+  this is a note for almost all the text, play with font-size and padding. 
+  text touching the edge of it's parent container doesn't look too appealing. 
+  for this one in particular take a look at how it'll look with the code below: */
+  /* font-size: 1.2em;
+  padding: 10px; */
 }
 .exclusive {
   grid-row: 2/3;
