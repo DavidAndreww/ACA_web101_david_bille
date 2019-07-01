@@ -1,3 +1,9 @@
+/* dude, this is 🔥🔥🔥! great work! */
+/* 
+  potential improvements: 
+   * sidebar nav, change color of text on hover.
+   * put your images in an image folder
+*/
 * {
   margin: 0;
   padding: 0;
@@ -340,6 +346,12 @@ a {
   main {
     width: 80%;
     height: 200%;
+    /* 
+    this ^ isn't ideal but after playing around with it, it works. 
+    we'd have to change a few things around to make this height: 100%; and eh, you made it work!
+    so we can leave it.
+    if you'd like to talk about changes concerning this, lmk! 
+    */
     padding-top: 2%;
   }
   .gridtop {
