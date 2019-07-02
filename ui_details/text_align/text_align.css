@@ -15,6 +15,7 @@
   max-height: 175px;
   margin: 15px;
 }
+
 .cell div:nth-child(1) {
   font-size: 30px;
   color: #949CCF;
