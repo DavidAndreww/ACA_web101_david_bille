@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+section {
+  width: 255px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 10px;
+  line-height: 1.5;
+}
+section h2:nth-child(1) {
+  display: inline-block;
+  width:40px;
+  background-color: #B4DFEB;
+  border: 2px solid #6AA3B4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  margin-bottom: 10px;
+}
