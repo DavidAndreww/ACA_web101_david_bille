@@ -43,8 +43,7 @@ header div {
   grid-template-rows: 80% 20%;
   width: 100%;
   height: 100%;
-  background-color: white;
-  border: 2px solid orange;
+  background-color: slategray;
   padding: 2%;
 }
 .col-left {
@@ -52,7 +51,8 @@ header div {
   grid-row: 1/2;
   display: flex;
   flex-direction: column;
-  border: 2px solid orange;
+  background-color: white;
+
 }
 h2 {
   text-align: center;
@@ -72,19 +72,20 @@ h2 {
   grid-row: 1/2;
   background-color: beige;
   padding-left: 4%;
-  border: 2px solid orange;
 }
 .row-bottom {
   grid-column: 1/3;
   grid-row: 2/3;
-  border: 2px solid blue;
+  background-color: white;
+  border-top: 2px solid slategrey;
 }
 .education {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-evenly; 
   margin-bottom: 1em;
   text-align: center;
+  margin-top: 30px;
 }
 a {
 text-decoration: none;
