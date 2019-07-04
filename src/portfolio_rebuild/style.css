@@ -41,3 +41,20 @@ nav {
   margin: 2% 25% 0% 25%;
   column-gap: 4%;
 }
+.project div:nth-child(2) {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.nasa div:nth-child(2) {
+  background-image: url(./nasa.png);
+}
+.dash div:nth-child(2) {
+  background-image: url(./dashboard.png);
+}
+.dash div:nth-child(2) {
+  background-image: url(./coupons.png);
+}
+.dash div:nth-child(2) {
+  background-image: url(./dashboard.png);
+  
+}
