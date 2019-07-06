@@ -10,17 +10,18 @@ body {
 }
 section {
   display: grid;
-  grid-template-columns: 45%;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 500px;
   background-color: #E5E5E5;
+  padding: 5px;
 }
 #form-section {
   grid-column: 1/2;
+  background-color: #FFFFFF;
 }
 #button {
   display: block;
 }
-
 #contact-section {
   grid-column: 2/3;
   background-color: #14213D;
