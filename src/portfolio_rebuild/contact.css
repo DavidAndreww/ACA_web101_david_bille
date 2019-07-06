@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./background.png);
+  background-repeat: no-repeat;
+  padding: 5% 15%;
+}
+section {
+  display: grid;
+  grid-template-columns: 45%;
+  grid-template-rows: 500px;
+  background-color: #E5E5E5;
+}
+#form-section {
+  grid-column: 1/2;
+}
+#button {
+  display: block;
+}
+
+#contact-section {
+  grid-column: 2/3;
+  background-color: #14213D;
+}
