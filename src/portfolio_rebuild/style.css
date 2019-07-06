@@ -6,7 +6,7 @@
 body {
   background-image: url(./background.png);
   background-repeat: no-repeat;
-  background-size: 100vh;
+  background-size: 100%;
   background-color: #0C0F0A;
 }
 header {
@@ -67,7 +67,7 @@ a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.main {
+.main-display {
   height: calc(110vh - 80px); /*Adjust this for phone/tablet view*/
   width: 100%;
   position: relative;
@@ -75,13 +75,17 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #00A6FB
+  color: #00A6FB;
 }
 .main img {
   height: 40%;
   width: 19%;
   position: relative;
   margin-bottom: 100px;
+}
+.project-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
 }
 .project-header {
   position: relative;
@@ -111,6 +115,22 @@ a:hover {
 }
 .project div:nth-child(1) {
   background-color: #0582CA;
+  padding: 2%;
+  border: 2px solid #046299;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project p {
+  color: #FCFFFC;
+}
+.project span {
+  background-color: #FCFFFC;
+  margin-left: 10px;
+  color: grey;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 10px;
 }
 .project div:nth-child(2) {
   background-repeat: no-repeat;
@@ -130,14 +150,54 @@ a:hover {
 .hair div:nth-child(2) {
   background-image: url(./hair.png);
 }
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 5px;
+}
+.project-links button {
+  background-color: #046299;
+  border: 5px solid #046299;
+  padding: 3px;
+  color: #FCFFFC;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  border-radius: 5px;
+}
+.project-links button:hover {
+  transform: translateY(-4px);
+  box-shadow: 1px 1px 1px 1px #00A6FB;
+}
+.project-links a {
+  text-decoration: none;
+  color: #FCFFFC;
+}
+.project-links a:visited {
+  text-decoration: none;
+  color: #FCFFFC;
+}
 .mission {
   margin-top: 50px;
+  padding: 0 35%;
   height: 300px;
   width: 100%;
   background-color: #00A6FB;
+  
+}
+.mission p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #FCFFFC;
+  font-weight: 650;
 }
 footer {
   height: 50px;
   width: 100%;
   background-color: #FCFFFC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
