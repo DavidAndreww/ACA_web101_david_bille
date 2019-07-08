@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(../online-resume/header.jpg);
+  background-image: url(./background.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,11 +12,11 @@ body {
   padding: 1% 25%;
 }
 header {
-  background-image: url(../online-resume/header.jpg);
+  background-image: url();
   background-position-x: -130px;
   background-size: 80%;
-  background-repeat: no-repeat;
   background-color: black;
+  background-repeat: no-repeat;
   width: 100%;
   height: 200px;
   padding-right: 10%;
