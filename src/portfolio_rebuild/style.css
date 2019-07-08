@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 body {
+  background-color: #0C0F0A; 
+}
+.wrap {
   background-image: url(./background.png);
   background-repeat: no-repeat;
   background-color: #0C0F0A;
+  animation-delay: .25s;
 }
 header {
   width: 250px;
@@ -104,6 +108,12 @@ a:hover {
   align-items: center;
   box-shadow: 0px 5px 6px 4px #0C0F0A;
 }
+.project-header h2 {
+  color: #046299;
+  letter-spacing: 6px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .project {
   display: grid;
   grid-template-columns: 48% 48%;
@@ -185,7 +195,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .mission p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -201,5 +210,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
