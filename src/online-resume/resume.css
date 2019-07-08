@@ -12,7 +12,11 @@ body {
   padding: 1% 25%;
 }
 header {
+<<<<<<< HEAD
   background-image: url();
+=======
+  background-image: url(../online-resume/resume-images/header.jpg);
+>>>>>>> restructuring
   background-position-x: -130px;
   background-size: 80%;
   background-color: black;
