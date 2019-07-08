@@ -6,6 +6,7 @@
 body {
   background-image: url(./background.png);
   background-repeat: no-repeat;
+  background-color: black;
   padding: 5% 15%;
 }
 section {
@@ -25,4 +26,12 @@ section {
 #contact-section {
   grid-column: 2/3;
   background-color: #14213D;
+}
+.videos {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+iframe {
+  border: 2px solid #FCFFFC;
 }
