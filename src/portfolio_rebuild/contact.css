@@ -6,10 +6,12 @@
 body {
   background-image: url(./background.png);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: black;
   padding: 5% 15%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-section {
+.main-display section {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 500px;
@@ -26,12 +28,4 @@ section {
 #contact-section {
   grid-column: 2/3;
   background-color: #14213D;
-}
-.videos {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-iframe {
-  border: 2px solid #FCFFFC;
 }

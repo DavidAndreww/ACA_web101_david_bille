@@ -4,18 +4,18 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #0C0F0A; 
+  background-color: #00171F; 
 }
 .wrap {
   background-image: url(./background.png);
   background-repeat: no-repeat;
-  background-color: #0C0F0A;
+  background-color: #00171F;
   animation-delay: .25s;
 }
 header {
   width: 250px;
   height: 80px;
-  background-color:  #0C0F0A;
+  background-color:  #00171F;
 }
 .navbar {
   overflow: hidden;
@@ -49,23 +49,29 @@ a:hover {
   font-family: inherit;
   margin: 0; 
 }
+.dropbutton2 {
+  display: none;
+}
+.dropbutton i:nth-child(2) {
+  display: none;
+}
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:  #0C0F0A;
-  min-width: 110px;
+  background-color: #00171F;
+  min-width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .dropdown-content a {
   float: none;
   color: #FCFFFC;
-  background-color: #0C0F0A;
+  background-color: #00171F;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -78,8 +84,29 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #00A6FB;
+  color:;
 }
+/*This section only for logo...can delete*/
+.main-display span:nth-child(1) {
+  color: #f7d05b;
+  text-shadow: 0px 0px 0px #f7d05b; 
+  font-size: 55px;
+  position: relative;
+  bottom: 15px;
+  font-weight: 800;
+  left: 25px;
+}
+.main-display span:nth-child(2) {
+  color: #FCFFFC;
+  font-size: 100px;
+  font-family: 'EB Garamond', serif;
+  position: relative;
+  bottom: 53px;
+  left: -115px;
+  font-weight: 100;
+  z-index: -1;
+}
+/*This section only for logo...can delete*/
 .main img {
   height: 40%;
   width: 19%;
@@ -89,11 +116,17 @@ a:hover {
 .project-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .project-header {
   position: relative;
   display: flex;
   justify-content: center;
+}
+.project-header i {
+  /* display: none; */
 }
 .project-header div {
   position: relative;
@@ -101,12 +134,12 @@ a:hover {
   width: 450px;
   height: 120px;
   background-color: #FCFFFC;
-  border: 1px solid #0C0F0A;
+  border: 1px solid #00171F;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 5px 6px 4px #0C0F0A;
+  box-shadow: 0px 5px 6px 4px #00171F;
 }
 .project-header h2 {
   color: #046299;
@@ -116,14 +149,14 @@ a:hover {
 }
 .project {
   display: grid;
-  grid-template-columns: 48% 48%;
+  grid-template-columns: 355px 355px;
   grid-template-rows: 230px;
-  margin: 2% 25% 0% 25%;
-  column-gap: 4%;
+  margin: 15px 25% 0% 25%;
+  column-gap: 15px;
   padding: 10px;
 }
 .project div:nth-child(1) {
-  background-color: #0582CA;
+  background-color: #00A8E8;
   padding: 2%;
   border: 2px solid #046299;
   display: flex;
@@ -143,7 +176,6 @@ a:hover {
 }
 .project div:nth-child(2) {
   background-repeat: no-repeat;
-  background-size: 100%;
   background-position: center;
   box-shadow: 2px 2px 2px 2px #0C0F0A;
 }
@@ -176,7 +208,7 @@ a:hover {
 }
 .project-links button:hover {
   transform: translateY(-4px);
-  box-shadow: 1px 1px 1px 1px #00A6FB;
+  box-shadow: 1px 1px 1px 1px #00A8E8;
 }
 .project-links a {
   text-decoration: none;
@@ -191,7 +223,7 @@ a:hover {
   padding: 0 35%;
   height: 300px;
   width: 100%;
-  background-color: #00A6FB;
+  background-color: #00A8E8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,4 +242,87 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: 'Dancing Script', cursive;
+}
+
+ @media (max-width: 1087px){
+  .mission {
+    padding: 0 25%;
+  }
+} 
+
+/*Tablet View*/
+@media (max-width: 854px){
+  .mission {
+    padding: 0 15%;
+  }
+  .mission p {
+    font-size: 15px;
+  }
+}
+
+
+
+/*Mobile View*/
+@media (max-width: 576px){
+  .dropbutton {
+    display: none;
+  }
+  .dropbutton2 {
+    display: block;
+  }
+  .dropbutton2 {
+    font-size: 20px; 
+    border: none;
+    outline: none;
+    color: #FCFFFC;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-top: 5px; 
+  }
+  .dropdown i {
+    font-size: 30px;
+  }
+  .navbar a {
+    font-size: 30px;
+  }
+  .dropdown-content a {
+    font-size: 18px;
+  }
+  .project-header div {
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+    height: 40px;
+    background-color: #FCFFFC;
+    border: 1px solid #00171F;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 6px 4px #00171F;
+  }
+  .project-header h2 {
+    color: #046299;
+    letter-spacing: 6px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 6px;
+  }
+  .project-header i {
+    display: inline;
+    color: #046299;
+  }/*How can I overlay these two?*/
+  .main-display span:nth-child(1) {
+    color: #f7d05b;
+    text-shadow: 1px 1px 1px #f7d05b; 
+    font-size: 30px;
+    position: relative;
+    bottom: 45px;
+    width: 150px;
+    margin-left: 10px;
+  }
 }
