@@ -147,6 +147,9 @@ a:hover {
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.project-header i {
+  display: none;
+}
 .project {
   display: grid;
   grid-template-columns: 355px 355px;
@@ -315,7 +318,7 @@ footer {
   .project-header i {
     display: inline;
     color: #046299;
-  }/*How can I overlay these two?*/
+  }/*Need to fix overlay*/
   .main-display span:nth-child(1) {
     color: #f7d05b;
     text-shadow: 1px 1px 1px #f7d05b; 
