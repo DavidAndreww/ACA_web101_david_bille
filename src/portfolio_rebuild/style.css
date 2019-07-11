@@ -28,7 +28,7 @@ header {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: .25s; 
+  transition: .25s;
 }
 a:hover {
   transform: translateY(-5px);
@@ -58,10 +58,10 @@ a:hover {
 }
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #00171F;
-  min-width: 80px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 60px;
+  max-width: 60px;
   z-index: 1;
 }
 .dropdown-content a {
@@ -76,8 +76,9 @@ a:hover {
   transition: .25s;
 }
 .dropdown:hover .dropdown-content {
-  display: block;
-}
+   display: block;
+    cursor: pointer;
+} 
 .main-display {
   height: calc(110vh - 80px); /*Adjust this for phone/tablet view*/
   width: 100%;
@@ -86,12 +87,11 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:;
 }
 /*This section only for logo...can delete*/
 .main-display span:nth-child(1) {
   color: #f7d05b;
-  text-shadow: 0px 0px 0px #f7d05b; 
+  text-shadow: 4px 4px 4px grey; 
   font-size: 55px;
   position: relative;
   bottom: 15px;
@@ -107,6 +107,12 @@ a:hover {
   left: -115px;
   font-weight: 100;
   z-index: -1;
+}
+.logo {
+  animation-delay: 1s;
+}
+.logo2 {
+  animation-delay: .85s;
 }
 /*This section only for logo...can delete*/
 .main img {
@@ -208,13 +214,14 @@ a:hover {
   padding: 3px;
   color: #FCFFFC;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   border-radius: 5px;
   transition: .25s;
+  text-transform: uppercase;
 }
 .project-links button:hover {
   transform: translateY(-4px);
-  box-shadow: 1px 1px 1px 1px #00A8E8;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .project-links a {
   text-decoration: none;
