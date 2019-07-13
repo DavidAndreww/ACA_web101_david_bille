@@ -10,12 +10,15 @@ body {
   background-image: url(./background.png);
   background-repeat: no-repeat;
   background-color: #00171F;
-  animation-delay: .25s;
+  height: 100vh;
+  animation-delay: 2s;
+  display: relative;
 }
 header {
   width: 250px;
   height: 80px;
   background-color:  #00171F;
+  position: relative;
 }
 .navbar {
   overflow: hidden;
@@ -58,11 +61,10 @@ a:hover {
 }
 .dropdown-content {
   display: none;
-  position: relative;
   background-color: #00171F;
   min-width: 60px;
   max-width: 60px;
-  z-index: 1;
+  z-index: -1;
 }
 .dropdown-content a {
   float: none;
@@ -77,36 +79,37 @@ a:hover {
 }
 .dropdown:hover .dropdown-content {
    display: block;
-    cursor: pointer;
 } 
 .main-display {
   height: calc(110vh - 80px); /*Adjust this for phone/tablet view*/
   width: 100%;
-  position: relative;
+  position: absolute;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  pointer-events: none;
 }
 /*This section only for logo...can delete*/
 .main-display span:nth-child(1) {
-  color: #f7d05b;
-  text-shadow: 4px 4px 4px grey; 
+  color: #d9e8f3;
+  text-shadow: 4px 4px 4px rgb(187, 192, 197); 
   font-size: 55px;
   position: relative;
   bottom: 15px;
   font-weight: 800;
   left: 25px;
+  z-index: 1;
 }
 .main-display span:nth-child(2) {
-  color: #FCFFFC;
+  color: white;
   font-size: 100px;
   font-family: 'EB Garamond', serif;
   position: relative;
   bottom: 53px;
   left: -115px;
   font-weight: 100;
-  z-index: -1;
 }
 .logo {
   animation-delay: 1s;
@@ -115,11 +118,21 @@ a:hover {
   animation-delay: .85s;
 }
 /*This section only for logo...can delete*/
-.main img {
-  height: 40%;
-  width: 19%;
+.downscroll {
+  color: white;
+  font-size: 32px;
+  width: 30px;
+}
+.downscroll a {
+  text-decoration: none;
+  color: white;
+}
+.scrollwrap {
+  width: 100vw;
   position: relative;
-  margin-bottom: 100px;
+  top: 580px;
+  display: flex;
+  justify-content: center;
 }
 .project-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -128,17 +141,18 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-.project-header {
+#project-header {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 100vh;
 }
 .project-header i {
   /* display: none; */
 }
-.project-header div {
+#project-header div {
   position: relative;
-  bottom: 60px;
+  /* bottom: 60px; */
   width: 450px;
   height: 120px;
   background-color: #FCFFFC;
@@ -149,13 +163,13 @@ a:hover {
   align-items: center;
   box-shadow: 0px 5px 6px 4px #00171F;
 }
-.project-header h2 {
+#project-header h2 {
   color: #046299;
   letter-spacing: 6px;
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.project-header i {
+#project-header i {
   display: none;
 }
 .project {
