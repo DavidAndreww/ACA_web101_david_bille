@@ -12,13 +12,11 @@ body {
   background-color: #00171F;
   height: 100vh;
   animation-delay: 2s;
-  display: relative;
 }
 header {
   width: 250px;
   height: 80px;
   background-color:  #00171F;
-  position: relative;
 }
 .navbar {
   overflow: hidden;
@@ -134,10 +132,6 @@ a:hover {
   display: flex;
   justify-content: center;
 }
-.page-2-wrap {
-  position: relative;
-    bottom: 700px;
-}
 .project-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -149,14 +143,13 @@ a:hover {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 100vh;
+  margin-top: 20px;
 }
 .project-header i {
   /* display: none; */
 }
 #project-header div {
   position: relative;
-  /* bottom: 60px; */
   width: 450px;
   height: 120px;
   background-color: #FCFFFC;
