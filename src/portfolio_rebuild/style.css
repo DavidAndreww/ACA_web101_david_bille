@@ -269,6 +269,7 @@ a:hover {
   box-shadow: none;
   background-color: #1f77aa;
   border: 5px solid #1f77aa;
+  outline: none;
 }
 .project-links a {
   text-decoration: none;
@@ -310,6 +311,7 @@ footer {
  @media (max-width: 1087px){
   .mission {
     padding: 0 25%;
+    height: 200px;
   }
 } 
 
@@ -317,10 +319,16 @@ footer {
 @media (max-width: 854px){
   .mission {
     padding: 0 15%;
+    height: 200px;
   }
   .mission p {
     font-size: 15px;
   }
+}
+
+/*Projects from row to column layout*/
+@media (max-width: 760px) {
+  
 }
 
 
