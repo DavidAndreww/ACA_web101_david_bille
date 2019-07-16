@@ -13,6 +13,7 @@ section {
 div {
   height: 50px;
   width: 50px;
+  transition: 3s ease;
 }
 .n1 {
   background-color: red;
