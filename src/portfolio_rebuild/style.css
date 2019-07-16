@@ -7,7 +7,7 @@ body {
   background-color: #00171F;
 }
 .wrap {
-  background-image: url(./background.png);
+  background-image: url(./images/background.png);
   background-repeat: no-repeat;
   background-color: #00171F;
   height: 100vh;
@@ -132,6 +132,8 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+/*Above is landing page, below is projects page*/
+
 .project-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -177,7 +179,7 @@ a:hover {
   column-gap: 15px;
   padding: 10px;
 }
-.project div:nth-child(1) {
+#textalign {
   background-color: #00A8E8;
   padding: 2%;
   border: 2px solid #046299;
@@ -196,22 +198,25 @@ a:hover {
   border-radius: 5px;
   font-size: 10px;
 }
+
+/*Above is project description cell below is Image cell*/
+
 .project div:nth-child(2) {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 2px 2px 2px 2px #0C0F0A;
 }
 .nasa div:nth-child(2) {
-  background-image: url(./nasa.png);
+  background-image: url(./images/nasa.png);
 }
 .dash div:nth-child(2) {
-  background-image: url(./dashboard.png);
+  background-image: url(./images/dashboard.png);
 }
 .coupons div:nth-child(2) {
-  background-image: url(./coupons.png);
+  background-image: url(./images/coupons.png);
 }
 .hair div:nth-child(2) {
-  background-image: url(./hair.png);
+  background-image: url(./images/hair.png);
 }
 .project-links {
   display: flex;
@@ -223,7 +228,17 @@ a:hover {
 .project-links:hover {
   opacity: 1;
 }
-.project-links button {
+#buttonwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00A8E8;
+  width: auto;
+  border-radius: 50px;
+  padding: 4px;
+  box-shadow: 2px 2px 2px;  
+}
+.project-links button:nth-child(1) {
   background-color: #046299;
   border: 5px solid #046299;
   padding: 3px;
@@ -234,9 +249,20 @@ a:hover {
   transition: .25s;
   text-transform: uppercase;
 }
+.project-links button:nth-child(2) {
+  background-color: #046299;
+  border: 5px solid #046299;
+  padding: 3px;
+  color: #FCFFFC;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  border-radius: 50px;
+  transition: .25s;
+  text-transform: uppercase;
+  width: 76px;
+}
 .project-links button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1) translateY(-5px);
 }
 .project-links button:active {
   transform: scale(1);
