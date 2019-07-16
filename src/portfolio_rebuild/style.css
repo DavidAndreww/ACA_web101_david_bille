@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #00171F; 
+  background-color: #00171F;
 }
 .wrap {
   background-image: url(./background.png);
@@ -134,6 +134,10 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+.page-2-wrap {
+  position: relative;
+    bottom: 700px;
+}
 .project-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -167,7 +171,7 @@ a:hover {
   color: #046299;
   letter-spacing: 6px;
   font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #project-header i {
   display: none;
