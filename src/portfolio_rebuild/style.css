@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #00171F; 
+}
+.wrap {
+  background-image: url(./background.png);
+  background-repeat: no-repeat;
+  background-color: #00171F;
+  height: 100vh;
+  animation-delay: 2s;
+  display: relative;
+}
+header {
+  width: 250px;
+  height: 80px;
+  background-color:  #00171F;
+  position: relative;
+}
+.navbar {
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar a {
+  float: left;
+  font-size: 24px;
+  color: #FCFFFC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: .25s;
+}
+a:hover {
+  transform: translateY(-5px);
+}
+.dropdown-content a:hover {
+  transform: translateX(5px);
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropbutton {
+  font-size: 20px; 
+  border: none;
+  outline: none;
+  color: #FCFFFC;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; 
+}
+.dropbutton2 {
+  display: none;
+}
+.dropbutton i:nth-child(2) {
+  display: none;
+}
+.dropdown-content {
+  display: none;
+  background-color: #00171F;
+  min-width: 60px;
+  max-width: 60px;
+  z-index: -1;
+}
+.dropdown-content a {
+  float: none;
+  color: #FCFFFC;
+  background-color: #00171F;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  transition: .25s;
+}
+.dropdown:hover .dropdown-content {
+   display: block;
+} 
+.main-display {
+  height: calc(110vh - 80px); /*Adjust this for phone/tablet view*/
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  pointer-events: none;
+}
+/*This section only for logo...can delete*/
+.main-display span:nth-child(1) {
+  color: #d9e8f3;
+  text-shadow: 4px 4px 4px rgb(187, 192, 197); 
+  font-size: 55px;
+  position: relative;
+  bottom: 15px;
+  font-weight: 800;
+  left: 25px;
+  z-index: 1;
+}
+.main-display span:nth-child(2) {
+  color: white;
+  font-size: 100px;
+  font-family: 'EB Garamond', serif;
+  position: relative;
+  bottom: 53px;
+  left: -115px;
+  font-weight: 100;
+}
+.logo {
+  animation-delay: 1s;
+}
+.logo2 {
+  animation-delay: .85s;
+}
+/*This section only for logo...can delete*/
+.downscroll {
+  color: white;
+  font-size: 32px;
+  width: 30px;
+}
+.downscroll a {
+  text-decoration: none;
+  color: white;
+}
+.scrollwrap {
+  width: 100vw;
+  position: relative;
+  top: 580px;
+  display: flex;
+  justify-content: center;
+}
+.project-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#project-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 100vh;
+}
+.project-header i {
+  /* display: none; */
+}
+#project-header div {
+  position: relative;
+  /* bottom: 60px; */
+  width: 450px;
+  height: 120px;
+  background-color: #FCFFFC;
+  border: 1px solid #00171F;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 6px 4px #00171F;
+}
+#project-header h2 {
+  color: #046299;
+  letter-spacing: 6px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#project-header i {
+  display: none;
+}
+.project {
+  display: grid;
+  grid-template-columns: 355px 355px;
+  grid-template-rows: 230px;
+  margin: 15px 25% 0% 25%;
+  column-gap: 15px;
+  padding: 10px;
+}
+.project div:nth-child(1) {
+  background-color: #00A8E8;
+  padding: 2%;
+  border: 2px solid #046299;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project p {
+  color: #FCFFFC;
+}
+.project span {
+  background-color: #FCFFFC;
+  margin-left: 10px;
+  color: grey;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.project div:nth-child(2) {
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 2px 2px 2px 2px #0C0F0A;
+}
+.nasa div:nth-child(2) {
+  background-image: url(./nasa.png);
+}
+.dash div:nth-child(2) {
+  background-image: url(./dashboard.png);
+}
+.coupons div:nth-child(2) {
+  background-image: url(./coupons.png);
+}
+.hair div:nth-child(2) {
+  background-image: url(./hair.png);
+}
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 5px;
+}
+.project-links button {
+  background-color: #046299;
+  border: 5px solid #046299;
+  padding: 3px;
+  color: #FCFFFC;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  border-radius: 5px;
+  transition: .25s;
+  text-transform: uppercase;
+}
+.project-links button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.project-links a {
+  text-decoration: none;
+  color: #FCFFFC;
+}
+.project-links a:visited {
+  text-decoration: none;
+  color: #FCFFFC;
+}
+.mission {
+  margin-top: 50px;
+  padding: 0 35%;
+  height: 300px;
+  width: 100%;
+  background-color: #00A8E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mission p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #FCFFFC;
+  font-weight: 650;
+}
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #FCFFFC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: 'Dancing Script', cursive;
+}
+
+ @media (max-width: 1087px){
+  .mission {
+    padding: 0 25%;
+  }
+} 
+
+/*Tablet View*/
+@media (max-width: 854px){
+  .mission {
+    padding: 0 15%;
+  }
+  .mission p {
+    font-size: 15px;
+  }
+}
+
+
+
+/*Mobile View*/
+@media (max-width: 576px){
+  .dropbutton {
+    display: none;
+  }
+  .dropbutton2 {
+    display: block;
+  }
+  .dropbutton2 {
+    font-size: 20px; 
+    border: none;
+    outline: none;
+    color: #FCFFFC;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-top: 5px; 
+  }
+  .dropdown i {
+    font-size: 30px;
+  }
+  .navbar a {
+    font-size: 30px;
+  }
+  .dropdown-content a {
+    font-size: 18px;
+  }
+  .project-header div {
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+    height: 40px;
+    background-color: #FCFFFC;
+    border: 1px solid #00171F;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 6px 4px #00171F;
+  }
+  .project-header h2 {
+    color: #046299;
+    letter-spacing: 6px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 6px;
+  }
+  .project-header i {
+    display: inline;
+    color: #046299;
+  }/*Need to fix overlay*/
+  .main-display span:nth-child(1) {
+    color: #f7d05b;
+    text-shadow: 1px 1px 1px #f7d05b; 
+    font-size: 30px;
+    position: relative;
+    bottom: 45px;
+    width: 150px;
+    margin-left: 10px;
+  }
+}
