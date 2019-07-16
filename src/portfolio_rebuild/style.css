@@ -126,7 +126,7 @@ a:hover {
   color: white;
 }
 .scrollwrap {
-  width: 100vw;
+  width: 100%;
   position: relative;
   top: 580px;
   display: flex;
