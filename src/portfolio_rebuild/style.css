@@ -91,8 +91,8 @@ a:hover {
 }
 /*This section only for logo...can delete*/
 .main-display span:nth-child(1) {
-  color: #d9e8f3;
-  text-shadow: 4px 4px 4px rgb(187, 192, 197); 
+  color: #F9F871;
+  text-shadow: 1px 1px 1px rgb(187, 192, 197); 
   font-size: 55px;
   position: relative;
   bottom: 15px;
@@ -327,9 +327,23 @@ footer {
 }
 
 /*Projects from row to column layout*/
-@media (max-width: 760px) {
+@media (max-width: 785px) {
+  .project {
+    display: block;
+    width: 370px;
+    min-width: 370px;
+  }
   
-}
+  .project div:nth-child(2) {
+    height: 250px;
+  }
+  .main-display span:nth-child(2) {
+    font-size: 70px;
+  }
+  .main-display span:nth-child(1) {
+    font-size: 35px;
+    bottom: 20px;
+  }
 
 
 
@@ -384,13 +398,18 @@ footer {
     display: inline;
     color: #046299;
   }/*Need to fix overlay*/
-  .main-display span:nth-child(1) {
-    color: #f7d05b;
-    text-shadow: 1px 1px 1px #f7d05b; 
-    font-size: 30px;
+  
+  .mission p {
+    font-size: 13px;
+  }
+  .project-links {
     position: relative;
-    bottom: 45px;
-    width: 150px;
-    margin-left: 10px;
+  }
+  #buttonwrap {
+    position: relative;
+    bottom: 10px;
+  }
+  .main-display span {
+    font-size: 5%;
   }
 }
