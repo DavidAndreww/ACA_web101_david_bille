@@ -90,6 +90,9 @@ a:hover {
   pointer-events: none;
 }
 /*This section only for logo...can delete*/
+.logocontainer {
+  position: relative;
+}
 .main-display span:nth-child(1) {
   color: #F9F871;
   text-shadow: 1px 1px 1px rgb(187, 192, 197); 
@@ -262,7 +265,7 @@ a:hover {
   width: 76px;
 }
 .project-links button:hover {
-  transform: scale(1.05) translateY(-5px);
+  transform: scale(1.05) translateY(-2px);
 }
 .project-links button:active {
   transform: scale(1);
@@ -333,17 +336,19 @@ footer {
     width: 370px;
     min-width: 370px;
   }
-  
   .project div:nth-child(2) {
     height: 250px;
   }
   .main-display span:nth-child(2) {
     font-size: 70px;
+    left: -75px;
+    min-width: 520px;
   }
   .main-display span:nth-child(1) {
     font-size: 35px;
-    bottom: 20px;
+    bottom: 35px;
   }
+}
 
 
 
@@ -371,8 +376,14 @@ footer {
   .navbar a {
     font-size: 30px;
   }
+  .dropdown-content {
+    min-width: 75px;
+  }
   .dropdown-content a {
-    font-size: 18px;
+    font-size: 15px;
+  }
+  .main-display span:nth-child(2) {
+    font-size: 60px;
   }
   .project-header div {
     position: relative;
@@ -397,7 +408,7 @@ footer {
   .project-header i {
     display: inline;
     color: #046299;
-  }/*Need to fix overlay*/
+  }
   
   .mission p {
     font-size: 13px;
@@ -408,8 +419,5 @@ footer {
   #buttonwrap {
     position: relative;
     bottom: 10px;
-  }
-  .main-display span {
-    font-size: 5%;
   }
 }
