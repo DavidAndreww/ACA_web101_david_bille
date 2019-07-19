@@ -4,21 +4,19 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #00171F; 
+  background-color: #00171F;
 }
 .wrap {
-  background-image: url(./background.png);
+  background-image: url(./images/background.png);
   background-repeat: no-repeat;
   background-color: #00171F;
   height: 100vh;
   animation-delay: 2s;
-  display: relative;
 }
 header {
   width: 250px;
   height: 80px;
   background-color:  #00171F;
-  position: relative;
 }
 .navbar {
   overflow: hidden;
@@ -92,9 +90,12 @@ a:hover {
   pointer-events: none;
 }
 /*This section only for logo...can delete*/
+.logocontainer {
+  position: relative;
+}
 .main-display span:nth-child(1) {
-  color: #d9e8f3;
-  text-shadow: 4px 4px 4px rgb(187, 192, 197); 
+  color: #F9F871;
+  text-shadow: 1px 1px 1px rgb(187, 192, 197); 
   font-size: 55px;
   position: relative;
   bottom: 15px;
@@ -128,12 +129,14 @@ a:hover {
   color: white;
 }
 .scrollwrap {
-  width: 100vw;
+  width: 100%;
   position: relative;
   top: 580px;
   display: flex;
   justify-content: center;
 }
+/*Above is landing page, below is projects page*/
+
 .project-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -145,14 +148,13 @@ a:hover {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 100vh;
+  margin-top: 20px;
 }
 .project-header i {
   /* display: none; */
 }
 #project-header div {
   position: relative;
-  /* bottom: 60px; */
   width: 450px;
   height: 120px;
   background-color: #FCFFFC;
@@ -167,7 +169,7 @@ a:hover {
   color: #046299;
   letter-spacing: 6px;
   font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #project-header i {
   display: none;
@@ -180,7 +182,7 @@ a:hover {
   column-gap: 15px;
   padding: 10px;
 }
-.project div:nth-child(1) {
+#textalign {
   background-color: #00A8E8;
   padding: 2%;
   border: 2px solid #046299;
@@ -199,43 +201,78 @@ a:hover {
   border-radius: 5px;
   font-size: 10px;
 }
+
+/*Above is project description cell below is Image cell*/
+
 .project div:nth-child(2) {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 2px 2px 2px 2px #0C0F0A;
 }
 .nasa div:nth-child(2) {
-  background-image: url(./nasa.png);
+  background-image: url(./images/nasa.png);
 }
 .dash div:nth-child(2) {
-  background-image: url(./dashboard.png);
+  background-image: url(./images/dashboard.png);
 }
 .coupons div:nth-child(2) {
-  background-image: url(./coupons.png);
+  background-image: url(./images/coupons.png);
 }
 .hair div:nth-child(2) {
-  background-image: url(./hair.png);
+  background-image: url(./images/hair.png);
 }
 .project-links {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   padding: 5px;
+  opacity: .6;
 }
-.project-links button {
+.project-links:hover {
+  opacity: 1;
+}
+#buttonwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00A8E8;
+  width: auto;
+  border-radius: 50px;
+  padding: 4px;
+  box-shadow: 2px 2px 2px;  
+}
+.project-links button:nth-child(1) {
   background-color: #046299;
   border: 5px solid #046299;
   padding: 3px;
   color: #FCFFFC;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 13px;
-  border-radius: 5px;
+  border-radius: 50px;
   transition: .25s;
   text-transform: uppercase;
 }
+.project-links button:nth-child(2) {
+  background-color: #046299;
+  border: 5px solid #046299;
+  padding: 3px;
+  color: #FCFFFC;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  border-radius: 50px;
+  transition: .25s;
+  text-transform: uppercase;
+  width: 76px;
+}
 .project-links button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05) translateY(-2px);
+}
+.project-links button:active {
+  transform: scale(1);
+  box-shadow: none;
+  background-color: #1f77aa;
+  border: 5px solid #1f77aa;
+  outline: none;
 }
 .project-links a {
   text-decoration: none;
@@ -277,6 +314,7 @@ footer {
  @media (max-width: 1087px){
   .mission {
     padding: 0 25%;
+    height: 200px;
   }
 } 
 
@@ -284,9 +322,31 @@ footer {
 @media (max-width: 854px){
   .mission {
     padding: 0 15%;
+    height: 200px;
   }
   .mission p {
     font-size: 15px;
+  }
+}
+
+/*Projects from row to column layout*/
+@media (max-width: 785px) {
+  .project {
+    display: block;
+    width: 370px;
+    min-width: 370px;
+  }
+  .project div:nth-child(2) {
+    height: 250px;
+  }
+  .main-display span:nth-child(2) {
+    font-size: 70px;
+    left: -75px;
+    min-width: 520px;
+  }
+  .main-display span:nth-child(1) {
+    font-size: 35px;
+    bottom: 35px;
   }
 }
 
@@ -316,8 +376,14 @@ footer {
   .navbar a {
     font-size: 30px;
   }
+  .dropdown-content {
+    min-width: 75px;
+  }
   .dropdown-content a {
-    font-size: 18px;
+    font-size: 15px;
+  }
+  .main-display span:nth-child(2) {
+    font-size: 60px;
   }
   .project-header div {
     position: relative;
@@ -342,14 +408,16 @@ footer {
   .project-header i {
     display: inline;
     color: #046299;
-  }/*Need to fix overlay*/
-  .main-display span:nth-child(1) {
-    color: #f7d05b;
-    text-shadow: 1px 1px 1px #f7d05b; 
-    font-size: 30px;
+  }
+  
+  .mission p {
+    font-size: 13px;
+  }
+  .project-links {
     position: relative;
-    bottom: 45px;
-    width: 150px;
-    margin-left: 10px;
+  }
+  #buttonwrap {
+    position: relative;
+    bottom: 10px;
   }
 }
