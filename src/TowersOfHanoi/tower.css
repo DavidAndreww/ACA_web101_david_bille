@@ -8,32 +8,46 @@
   height: 180px;
   background-color: green;
 }
-.yellow {
-  width: 10px;
-  height: 180px;
-  background-color: yellow;
-}
 .blue {
   width: 10px;
   height: 180px;
   background-color: blue;
-}
-.red {
-  width: 10px;
-  height: 180px;
-  background-color: red;
 }
 .gray {
   width: 10px;
   height: 180px;
   background-color: gray;
 }
-.data-row {
+.wrapper .blue {
   float: left;
-  margin-right: 10px;
+  margin-left: 35px;
+  margin-right: 35px;
   border: 1px solid black;
 }
 .wrapper {
   display: flex;
   justify-content: center;
+  align-items: center; /*Not working*/
+  height: 100vh;
+}
+.piece1 {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+}
+.piece2 {
+  background-color: limegreen;
+  width: 30px;
+  height: 15px;
+}
+.piece3 {
+  background-color: lightblue;
+  width: 45px;
+  height: 15px;
+}
+.piece-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
