@@ -1,8 +1,82 @@
-* {
-  margin: 0;
-  padding: 0;
+/* * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
+} */
+body {
+  background-color: black;
+  font-family: verdana;
 }
-.row {
-  height: 100vh;
+#nav {
+ height: 100x;
+ background-color: black;
+ color: white
+}
+#nav a {
+  color: #2197A3;
+  font-size: 1em;
+  opacity: .8;
+  border: 1px solid #2197A3;
+  padding: 10px 16px;
+  border-radius: 50px;
+}
+#nav a:hover {
+  transform: translateY(-4px);
+  text-decoration: none;
+  background-color: white;
+  opacity: 1;
+}
+#nav2 {
+ height: 50px;
+ background-color: black;
+}
+#nav2 .social-wrap {
+  width: 15%;
+  margin-bottom: 5px
+}
+#nav2 .social-wrap a {
+  color: white;
+  font-size: 1.5em;
+}
+#row {
+  margin: 0;
+  height: 505px;
+}
+#main-carousel {
+  background: url(./background3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 505px;
+}
+h2 span {
+  color: #F205CB;
+}
+h2 span:first-child {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: verdana;
+  position: relative;
+  bottom: 40px;
+  left: 5px;
+}
+h2,
+h2 span:nth-child(2) {
+  font-family: 'Rochester', cursive;
+}
+h2 {
+  position: relative;
+  right: 15px;
+  font-size: 5em;
+  opacity: .9;
+}
+.carousel-inner {
+  height: 600px;
+}
+.carousel-item {
+  color: white;
+  border: 1px solid white;
+  width: 75%;
+  height: 500px;
 }
