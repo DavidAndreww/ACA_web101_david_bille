@@ -1,8 +1,8 @@
-/* * {
+ * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-} */
+  /* box-sizing: border-box; */
+} 
 body {
   background-color: black;
   font-family: verdana;
@@ -13,19 +13,19 @@ body {
  background-color: black;
  color: white
 }
-#nav a {
-  color: #2197A3;
-  font-size: 1em;
-  opacity: .8;
-  border: 1px solid #2197A3;
-  padding: 10px 16px;
+#button {
+  width: 115px;
   border-radius: 50px;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid #00B7C5;
 }
-#nav a:hover {
-  transform: translateY(-4px);
-  text-decoration: none;
-  background-color: white;
-  opacity: 1;
+#button:hover {
+  background-color: #00B7C5;
+  transform: translateY(-1.5px);
+}
+#button.selected {
+  border: 2px solid yellow;
 }
 #nav2 {
  min-height: 30px;
@@ -47,12 +47,12 @@ body {
   height: 545px;
 }
 #main-carousel {
-  background: url(./background4.png);
+  background: url(./background2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 545px;
+  height: 555px;
 }
 h2 span {
   color: #F205CB;
@@ -71,16 +71,14 @@ h2 span:nth-child(2) {
 }
 h2 {
   position: relative;
-  right: 15px;
-  font-size: 5em;
+  right: 25px;
+  font-size: 4.5em;
   opacity: .9;
-}
-.carousel-inner {
-  height: 600px;
 }
 .carousel-item {
   color: white;
   border: 1px solid white;
   width: 75%;
   height: 500px;
+  margin-top: 30px;
 }
