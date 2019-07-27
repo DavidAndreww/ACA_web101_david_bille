@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <!-- StyleSheet/GoogleFont x2/FontAwesome -->
   <link rel="stylesheet" href="./landing.css">
   <link href="https://fonts.googleapis.com/css?family=Rochester&display=swap" rel="stylesheet">
@@ -19,8 +20,10 @@
 </head>
 
 <body>
-  <!--Main Container -->
-  <div id="main-container" class="container-fluid">
+
+  <!--Navbar Container -->
+  <div id="nav-container" class="container-fluid">
+
     <!-- Links NavBar -->
     <div id="nav" class="navbar d-flex justify-content-center">
       <a id="button" href="" class="btn btn-outline-primary mr-5">Home</a>
@@ -29,55 +32,86 @@
       <a id="button" href="" class="btn btn-outline-primary ml-5">Blog</a>
       <a id="button" href="" class="btn btn-outline-primary ml-5">Contact</a>
     </div>
-    <div>
-      <!-- Carousel ID-->
-      <div id="main-carousel" class="carousel slide"
-        data-ride="carousel">
-        <!-- Carousel Wrapper -->
-        <div id="carousel-display" class="carousel-inner d-flex justify-content-center" role="listbox">
-          <!-- First Carousel Page-->
-          <div class="carousel-item active">
-            <div><!-- Slide BG Color --></div>
-            <div>CONTENT1
-              <p>Hi! I’m Kristi. I started a new chapter in my life with my two amazing kids. It's more like a new book. A new beginning for us. I moved to a big city, trying new things, and taking a leap of faith. This is a place of grace. I hope you feel encouraged and join me in taking a leap of faith!
+  </div>
 
-                A bit of history:
-                The past 12 years I’ve lived in a small country town.  Met my ex and we have two wonderful kids – a sweet boy named Connor and a joyful daughter named Scotty.  My ex and I were together for 10 years, but ended our relationship over a year ago.  Through the storm, God never left my side.  I got baptized, tried new hobbies like woodworking, go fishing on my own, hiking, dating, moved to a HUGE city, and continue to try new things!  You can say I’m living by that saying, YOLO. I like to say YOLO, but in a Godly way :)
-                
-                I'm loving life, loving this new beginning, and happier than I've been in a while. I hope you feel inspired by my blog to try new things from woodworking, healthy living, new fashion, etc! 
-                ​ 
-                I can do all things through Him who strengthens me – Philippians 4:13, and you can, too!  Thanks for checking out my journey!  I can go on, but I’ll let you read the juicy stuff about my life in my blog.
-                
-                Feel free to contact me! Like, follow, tweet, snap, etc. ;)</p>
-            </div>
+  <!-- Main Container -->
+  <div id="main-content">
+
+    <!-- Carousel House -->
+    <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+
+      <!-- Houses Carousel Slides -->
+      <div class="carousel-inner">
+
+        <!-- First Slide -->
+        <div class="carousel-item active d-flex">
+          <div class="slide-bg">
+            <!-- Holds Background Color -->
           </div>
-          <!-- Second Carousel Page-->
-          <div id="content2" class="carousel-item">
-            <div>CONTENT2</div>
+          <section class="slide-content">
+            <h3>Hi, I'm Kristi!</h3>
+            <p>I started a new chapter in my life with my two amazing kids. It's more like a new book. A new beginning
+              for
+              us. I moved to a big city, trying new things and taking a leap of faith. This is a place of grace. I hope
+              you feel encouraged and join me in taking a leap of faith!</p>
+            <p><span>A bit of history:</span><br />The past 12 years I've lived in a small country town. Met my ex and we have two
+              wonderful kids - a sweet boy named Connor and a joyful daughter named Scotty. My ex and I were together
+              for
+              10 years, but ended our relationship over a year ago. Through the storm, God never left my side. I got
+              aptized, tried new hobbies like woodworking, fishing, hiking, dating and moved to a HUGE city where I
+              continue to try new things! You can say I'm living by that saying "YOLO", but in a Godlly way!</p>
+            <p>I'm loving life, loving this new beginning and I'm happier than I've been in a while. I hope you feel
+              inspired by my blog to try new things in your own life!</p>
+            <p><i>I can do all things through Him who strengthens me - Philippians 4:13</i> and so can you! Thanks for
+              checking out my journey! I can go on, but I'll let you read the juicy stuff about my life in my blog.</p>
+          </section>
+          <img class="kristi" src="./kristi1.png" alt="">
+        </div>
+
+        <!-- Second Slide -->
+        <div class="carousel-item">
+          <div class="slide-bg">
+            <!-- Holds Background Color -->
           </div>
-          <!-- Third Carousel Page-->
-          <div id="content3" class="carousel-item">
-            <div>CONTENT3</div>
+          <h1>Second Slide</h1>
+        </div>
+
+        <!-- Third Slide -->
+        <div class="carousel-item">
+          <div class="slide-bg">
+            <!-- Holds Background Color -->
           </div>
-          <!-- Fourth Carousel Page-->
-          <div id="content4" class="carousel-item">
-            <div>CONTENT4</div>
+          <h1>Third Slide</h1>
+        </div>
+
+        <!-- Fourth Slide -->
+        <div class="carousel-item">
+          <div class="slide-bg">
+            <!-- Holds Background Color -->
           </div>
-          <!-- Scroll Buttons -->
-          <a href="#main-carousel" class="carousel-control-prev" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a href="#main-carousel" class="carousel-control-next" role="button" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <h1>Fourth Slide</h1>
         </div>
       </div>
+
+      <!-- Carousel Side Controls -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
     </div>
   </div>
-<!-- Social Media Navbar-->
-<div id="nav2" class="navbar d-flex justify-content-center">
+
+
+
+
+
+  <!-- Social Media Navbar-->
+  <div id="nav2" class="navbar d-flex justify-content-center">
     <div class="social-wrap d-flex justify-content-around">
       <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
       <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
