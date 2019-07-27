@@ -81,7 +81,7 @@ h2 {
   width: 100%;
 }
 .carousel-inner {
-  /* position: absolute; */
+  position: absolute;
   border: 1px solid white;
   border-radius: 20px;
   width: 80%;
@@ -98,21 +98,26 @@ h2 {
   z-index: -1;
   opacity: .80;
 }
+/* End Carousel Styling*/
+
+/* Slide 1 Styling */
 .slide-content {
-  padding: 5px;
+  display: flex;
+  height: 500px;
+}
+.text-content {
+  padding: 10px;
 }
 .slide-content h3,
 .slide-content p {
   opacity: .9;
 }
-/* End Carousel Styling*/
-
-/* Slide 1 Styling */
 .slide-content span {
   text-decoration: underline;
 }
 .kristi {
-  width: 75vw;
+  width: 100%;
+  min-width: 285px;
 }
 /*End Slide 1 Styling*/
 
