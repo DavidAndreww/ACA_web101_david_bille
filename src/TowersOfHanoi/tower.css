@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 .green {
   width: 10px;
@@ -20,8 +21,8 @@
 }
 .wrapper .blue {
   float: left;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 75px;
+  margin-right: 75px;
   border: 1px solid black;
 }
 .wrapper {
@@ -32,18 +33,23 @@
 }
 .piece1 {
   background-color: red;
-  width: 15px;
+  width: 35px;
   height: 15px;
 }
 .piece2 {
   background-color: limegreen;
-  width: 30px;
+  width: 50px;
   height: 15px;
 }
 .piece3 {
   background-color: lightblue;
-  width: 45px;
+  width: 65px;
   height: 15px;
+}
+.piece1,
+.piece2,
+.piece3 {
+  border-radius: 50px;
 }
 .piece-holder {
   display: flex;

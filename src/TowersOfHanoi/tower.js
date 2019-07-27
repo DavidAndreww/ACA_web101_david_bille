@@ -3,12 +3,12 @@
 $(document).ready(function() {
   let $block = null;
   
-  $('[data-row]').click(function() {
+  $('.data-row').click(function() {
     if ($block) {
-      $(this).append($block);
+      $(this).prepend($block);
       $block = null;
     } else {
-      $block = $(this).children().last().detach();
+      $block = $(this).children().first().detach();
     }
   })
 })
