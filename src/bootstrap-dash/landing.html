@@ -27,7 +27,7 @@
     <!-- Links NavBar -->
     <div id="nav" class="navbar d-flex justify-content-center">
       <a id="button" target="" href="" class="btn btn-outline-primary mr-5">Home</a>
-      <a id="button" target="" href="" class="btn btn-outline-primary mr-5">About</a>
+      <a id="button" target="#about-me" href="" class="btn btn-outline-primary mr-5">About</a>
       <h2 class="font-weight-bold"><span>Kristi Q. </span><span>Le</span>ap of Faith</h2>
       <a id="button" target="" href="" class="btn btn-outline-primary ml-5">Blog</a>
       <a id="button" target="" href="" class="btn btn-outline-primary ml-5">Contact</a>
@@ -47,7 +47,7 @@
         </div>
 
         <!-- About Me Slide -->
-        <div class="carousel-item">
+        <div id="about-me" class="carousel-item">
           <div class="slide-bg">
             <!-- Holds Background Color -->
           </div>
@@ -80,41 +80,45 @@
         <div class="carousel-item">
           <div class="slide-bg">
             <!-- Holds Background Color -->
-          </div class="slide-content">
+          </div>
           <!-- Card Section -->
-          <div class="card-group">
+          <div class="card-group d-flex justify-content-around align-items-center">
+              <div class="card">
+                  <div class="card-img-top bg card1">
+                   <!-- Holds BG Image -->
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Woodworking</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
             <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-img-top bg card2">
+               <!-- Holds BG Image -->
+              </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">Winter-Wear</h5>
+                <p class="card-text">This card has supporting text below</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">Last updated 3 mins ago</small>
               </div>
             </div>
             <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <div class="card-img-top bg card3">
+                 <!-- Holds BG Image -->
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Franks Red Hot</h5>
+                  <p class="card-text">text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
               </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This card has even longer content than the first to show that equal height action.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -151,13 +155,13 @@
 
         <!-- Carousel Side Controls -->
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
 
       </div>
     </div>

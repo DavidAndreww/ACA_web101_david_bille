@@ -107,8 +107,11 @@ h2 {
   display: flex;
   height: 500;
 }
-.text-content {
-  padding: 10px;
+.carousel-control-prev {
+  width: 25px;
+}
+.carousel-control-next {
+  width: 25px;
 }
 /* End Carousel Styling*/
 
@@ -135,7 +138,9 @@ h2 {
 
 
 /* About Me Styling */
-
+.text-content {
+  padding: 10px;
+}
 .slide-content h3,
 .slide-content p {
   opacity: .95;
@@ -152,8 +157,32 @@ h2 {
 
 
 /* Blog Styling */
-
-
+.card-group {
+  height: 500px;
+}
+.card {
+  max-width: 300px;
+  max-height: 350px;
+}
+.card-img-top {
+  min-width: 300px;
+  min-height: 180px;
+  background-color: blue;
+}
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card1 {
+  background-image: url(./Images/blog1.png)
+}
+.card2 {
+  background-image: url(./Images/blog2.png)
+}
+.card3 {
+  background-image: url(./Images/blog3.png)
+}
 
 /* End Blog Styling */
 
