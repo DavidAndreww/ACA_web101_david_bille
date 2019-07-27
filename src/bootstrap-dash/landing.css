@@ -5,7 +5,8 @@
   box-sizing: border-box; 
 } 
 body {
-  background-color: black;
+  background-color: white;
+  background-image: url(./background3.png);
   font-family: verdana;
   font-family: 'Sawarabi Mincho', sans-serif;
   line-height: 1.3;
@@ -13,21 +14,17 @@ body {
 }
 #nav-container {
   height: 15%;
-  background-color: black;
-  color: white
 }
 #main-content { /* Houses Carousel */
   display: flex;
   justify-content: center;
   height: 550px;
-  background-image: url(./background2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 #nav2 {
   min-height: 30px;
-  background-color: black;
 }
 #nav2 .social-wrap {
   width: 15%;
@@ -37,7 +34,7 @@ body {
 
 /* Heading Style */
 h2 span {
-  color: #F205CB;
+  color: #D2AC47;
 }
 h2 span:first-child {
   font-size: 15px;
@@ -61,13 +58,17 @@ h2 {
   width: 115px;
   border-radius: 50px;
   text-transform: uppercase;
-  color: white;
-  border: 1px solid #00B7C5;
+  color: #D2AC47;
+  border: 1px solid #D2AC47;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 #button:hover {
-  background-color: #00B7C5;
-  transform: translateY(-1.5px);
-  border: 1px solid white;
+  background-color: white;
+  color: #D2AC47;
+  border: 2px solid #D2AC47;
+  opacity: .9;
 }
 /* End Heading Style */
 
@@ -83,23 +84,28 @@ h2 {
   position: absolute;
   display: flex;
   justify-content: center;
-  border: 2px solid white;
+  border: 1px solid white;
+  border-radius: 20px;
   width: 80%;
   height: 500px;
 }
 .carousel-item {
-  color: white;
+  color: black;
 }
 .slide-bg {
   position: absolute;
   width: 100%;
   height: 500px;
-  background-color: rgb(4, 203, 218);
+  background-color: rgb(27, 222, 236);
   z-index: -1;
-  opacity: .65;
+  opacity: .80;
 }
 .slide-content {
   padding: 5px;
+}
+.slide-content h3,
+.slide-content p {
+  opacity: .9;
 }
 /* End Carousel Styling*/
 
@@ -114,11 +120,13 @@ h2 {
 
 /* Social Media Link Styles */
 #nav2 .social-wrap a {
-  color: white;
+  color: #D2AC47;
   font-size: 1.5em;
 }
 #nav2 .social-wrap a:hover {
-  color: #00B7C5;
+  color: #D2AC47;
+  transform: translateY(-3px);
+  
 }
 /* End Social Media Styles */
 
