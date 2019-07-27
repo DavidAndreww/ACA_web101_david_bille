@@ -16,7 +16,7 @@ body {
   height: 15%;
 }
 #main-content { /* Houses Carousel */
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   height: 550px;
   background-repeat: no-repeat;
@@ -31,6 +31,8 @@ body {
   margin-bottom: 5px
 }
 /* End Framework */
+
+
 
 /* Heading Style */
 h2 span {
@@ -72,6 +74,8 @@ h2 {
 }
 /* End Heading Style */
 
+
+
 /* Carousel Styling */
 #carouselExampleControls {
   display: flex;
@@ -101,14 +105,36 @@ h2 {
 }
 .slide-content {
   display: flex;
-  height: 500px;
+  height: 500;
 }
 .text-content {
   padding: 10px;
 }
 /* End Carousel Styling*/
 
-/* Slide 1 Styling */
+
+
+/* Landing Styling */
+#landing-bg {
+  background-image: url(./Images/landing.png);
+  background-size: cover;
+  background-repeat: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FBADD4;
+  z-index: -1;
+}
+#landing-bg h4 {
+  color: white;
+  margin-top: 35%;
+  margin-left: 10%;
+}
+/* End Landing Styling */
+
+
+
+/* About Me Styling */
 
 .slide-content h3,
 .slide-content p {
@@ -117,13 +143,21 @@ h2 {
 .slide-content span {
   text-decoration: underline;
 }
-.kristi {
+.about-image {
   width: 100%;
   min-width: 285px;
 }
-/*End Slide 1 Styling*/
+/*End About Me Styling*/
 
-/* Cardpage Styling */
+
+
+/* Blog Styling */
+
+
+
+/* End Blog Styling */
+
+
 
 /* Social Media Link Styles */
 #nav2 .social-wrap a {
