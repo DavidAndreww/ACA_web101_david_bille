@@ -183,9 +183,26 @@ h2 {
 .card3 {
   background-image: url(./Images/blog3.png)
 }
-
 /* End Blog Styling */
 
+
+
+/* Start Form Styling */
+#form-content {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+#form-image-right {
+  width: 50%;
+  min-width: 500px;
+}
+#inputName {
+  width: 250px;
+}
+/* End Form Styling */
 
 
 /* Social Media Link Styles */

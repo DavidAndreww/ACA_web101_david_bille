@@ -82,53 +82,76 @@
             <!-- Holds Background Color -->
           </div>
           <!-- Card Section -->
+          <h3>Blog Posts</h3>
           <div class="card-group d-flex justify-content-around align-items-center">
-              <div class="card">
-                  <div class="card-img-top bg card1">
-                   <!-- Holds BG Image -->
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Woodworking</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
+            <div class="card">
+              <div class="card-img-top bg card1">
+                <!-- Holds BG Image -->
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Woodworking</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">April 3<sup>rd</sup>, 2019</small>
+              </div>
+            </div>
             <div class="card">
               <div class="card-img-top bg card2">
-               <!-- Holds BG Image -->
+                <!-- Holds BG Image -->
               </div>
               <div class="card-body">
                 <h5 class="card-title">Winter-Wear</h5>
                 <p class="card-text">This card has supporting text below</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">January 26<sup>th</sup>, 2019</small>
               </div>
             </div>
             <div class="card">
-                <div class="card-img-top bg card3">
-                 <!-- Holds BG Image -->
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Franks Red Hot</h5>
-                  <p class="card-text">text below as a natural lead-in to additional content.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
+              <div class="card-img-top bg card3">
+                <!-- Holds BG Image -->
               </div>
+              <div class="card-body">
+                <h5 class="card-title">Franks Red Hot</h5>
+                <p class="card-text">text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">November 14<sup>th</sup>, 2018</small>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Third Slide -->
+        <!-- Contact Form -->
         <div class="carousel-item">
-          <div class="slide-content">
+          <div id="form-content" class="slide-content">
             <div class="slide-bg">
               <!-- Holds Background Color -->
             </div>
-            <h1>Third Slide</h1>
+            <section>
+            <h4 class="ml-5">I want to hear from you!</h4>
+            <!-- Form Markup -->
+            <form class="ml-5">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Name:</label>
+                  <input type="name" class="form-control" id="inputName" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">E-Mail Address:</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="yourMessage">Your Message:</label>
+                <textarea rows="4" cols="50" class="form-control" id="yourMessage" placeholder="">sdfsdf</textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </section>
+            <!-- Right Image -->
+            <img id="form-image-right" src="./Images/family.png" alt="">
           </div>
         </div>
 
@@ -155,13 +178,13 @@
 
         <!-- Carousel Side Controls -->
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
 
       </div>
     </div>
