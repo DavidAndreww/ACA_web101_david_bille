@@ -19,11 +19,9 @@ body {
 #piece-holder1 {
   background-image: url(./tower.jpg);
   background-position: center;
-  background-position-y: -45px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 3px;
-  animation-name: piece1;
+  margin-top: -45px;
 }
 #piece-holder2 {
   float: left;
@@ -82,7 +80,4 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 6.5px;
 }
-@keyframes piece1 {
-  0%   {position: 50px;}
-  100% {position: 200px}
-}
+
