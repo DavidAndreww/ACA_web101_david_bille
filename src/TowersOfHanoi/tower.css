@@ -19,7 +19,7 @@ body {
 #piece-holder1 {
   background-image: url(./tower.jpg);
   background-position: center;
-  background-position-y: -15px;
+  background-position-y: -45px;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 3px;
@@ -28,7 +28,7 @@ body {
   float: left;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: -20px;
+  margin-top: -60px;
   background-image: url(./tower.jpg);
   background-position-x: -55px;
   background-size: cover;
@@ -37,6 +37,7 @@ body {
   background-image: url(./tower.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: -40px;
 
 }
 .wrapper {
@@ -66,12 +67,18 @@ body {
 .piece1,
 .piece2,
 .piece3 {
-  border-radius: 10px;
+  border-radius: 50px;
 }
 .piece-holder {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+h1 {
+  font-family: 'Germania One', cursive;
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 6.5px;
 }
 
