@@ -23,6 +23,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 3px;
+  animation-name: piece1;
 }
 #piece-holder2 {
   float: left;
@@ -81,4 +82,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 6.5px;
 }
-
+@keyframes piece1 {
+  0%   {position: 50px;}
+  100% {position: 200px}
+}
