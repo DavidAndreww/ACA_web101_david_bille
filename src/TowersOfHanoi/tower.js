@@ -4,7 +4,7 @@
 $(document).ready(function() {
   let heldblock = null;
 
-
+//Identifies the parent 'data-row' to be target of click function
   $('.data-row').click(function() {
     if (heldblock) {
       if (heldblock.data('value') < $(this).children().first().data('value')||
@@ -18,19 +18,7 @@ $(document).ready(function() {
     } else {
       heldblock = $(this).children().first().detach();
     console.log(heldblock.data('value'));
-    }
-    
-    let grabbedblock = null;
-
-
-
-    // let firstdisc = $('[data-value]:first-child')
-    // console.log($(this));
-    // if (block.data('value') >) {
-       
-    // } else {
-      
-    // }
+    }   
   })
 })
 
