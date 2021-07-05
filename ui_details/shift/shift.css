@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  padding: 50px;
+  position: relative;
+}
+.button1{
+  background: linear-gradient(to top, #010d1f, #001c51, #002685, #0029b7, #1318e5);
+}
+.button2 {
+  background: linear-gradient(to top, #462812, #693310, #8f3d0e, #b9440e, #e54813);
+}
+button {
+  width: 230px;
+  height: 75px;
+  color: white;
+  border: 0;
+  border-radius: 15%;
+  font-size: 30px;
+}
+.button1:hover {
+  position: relative;
+  bottom: 5px;
+}
+.button2:hover {
+  position: relative;
+  bottom: 5px;  
+}

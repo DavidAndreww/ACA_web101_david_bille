@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 200px 50px;
+  background-color: aqua;
+  text-shadow: 2px 2px 8px #FF0000;
+}
+#grid div {
+  padding: 10px 0 0 30px;
+}
+#grid div:nth-child(1) {
+  font-size: 2em;
+  color: white;
+}
+#grid div:nth-child(2) {
+  background-color: aquamarine;
+  color: white;
+}
+span {
+  display: block;
+  font-size: 12px;
+  font-weight: bolder;
+  color: seagreen;
+}
